@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CheckMaster — Delete account &amp; data</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f1412;
+      --fg: #e8f0ec;
+      --muted: #9fb0a8;
+      --accent: #4edea3;
+      --rule: #24302b;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6faf7;
+        --fg: #14201b;
+        --muted: #5a6b63;
+        --accent: #0d8f5b;
+        --rule: #d5e3db;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1 { font-size: 1.75rem; margin: 0 0 0.35rem; }
+    h2 { font-size: 1.15rem; margin: 2rem 0 0.6rem; }
+    .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
+    a { color: var(--accent); }
+    hr { border: 0; border-top: 1px solid var(--rule); margin: 1.5rem 0; }
+    ul { padding-left: 1.2rem; }
+    .cta {
+      display: inline-block;
+      margin: 1rem 0 0.5rem;
+      padding: 0.75rem 1.1rem;
+      background: var(--accent);
+      color: #0f1412;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 0.4rem;
+    }
+    @media (prefers-color-scheme: light) {
+      .cta { color: #fff; }
+    }
+    .box {
+      border: 1px solid var(--rule);
+      border-radius: 0.5rem;
+      padding: 1rem 1.1rem;
+      margin: 1.25rem 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Delete your CheckMaster account</h1>
+    <p class="meta">
+      App: CheckMaster (<code>com.checkmaster.app</code>)<br />
+      Use this page to request deletion of your app account and associated data.
+      No sign-in is required.
+    </p>
+
+    <h2>What gets deleted</h2>
+    <p>When we process your request, we delete:</p>
+    <ul>
+      <li>Your Firebase Authentication account (guest or Google-linked)</li>
+      <li>Your user profile and gamification data (streaks, badges, Pro flag)</li>
+      <li>Checklists you own and their items</li>
+      <li>Peer reviews and audit history tied to your account</li>
+      <li>Share/invitation codes you created</li>
+    </ul>
+    <p>
+      Photo proofs that were part of a review you submitted to someone else may
+      already appear in their history; we remove what we control on your account
+      and related documents. Data held only on your device is removed when you
+      uninstall the app or clear app storage.
+    </p>
+
+    <h2>How to request deletion</h2>
+    <div class="box">
+      <p><strong>Option A — Email (recommended)</strong></p>
+      <p>
+        Send a message from the Google account you use with CheckMaster (or
+        state your display name / approximate signup time if you only used
+        guest mode):
+      </p>
+      <a
+        class="cta"
+        href="mailto:nikoskkostopoulos@gmail.com?subject=CheckMaster%20account%20deletion%20request&body=Please%20delete%20my%20CheckMaster%20account%20and%20associated%20data.%0A%0AGoogle%20account%20email%20(if%20signed%20in)%3A%0ADisplay%20name%20in%20app%3A%0AApprox.%20last%20use%20date%3A%0A"
+      >Email deletion request</a>
+      <p class="meta" style="margin-top: 0.75rem">
+        To: <a href="mailto:nikoskkostopoulos@gmail.com">nikoskkostopoulos@gmail.com</a><br />
+        Subject: CheckMaster account deletion request
+      </p>
+    </div>
+    <div class="box">
+      <p><strong>Option B — Also revoke Google access</strong></p>
+      <p>
+        If you signed in with Google, you can additionally revoke CheckMaster’s
+        access in your Google Account:
+      </p>
+      <p>
+        <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">
+          Google Account → Third-party access
+        </a>
+      </p>
+      <p class="meta">
+        Revoking Google access alone does not delete Firestore data; still send
+        the email above so we can wipe your app account.
+      </p>
+    </div>
+
+    <h2>Timeline</h2>
+    <p>
+      We aim to complete deletion within <strong>30 days</strong> of a verifiable
+      request. You will get a short confirmation email when it is done. We do not
+      “freeze” accounts — deletion removes the account and associated app data,
+      except where a short retention is required for security or legal reasons
+      (we will say so if that applies).
+    </p>
+
+    <h2>Privacy policy</h2>
+    <p>
+      See the full
+      <a href="./">CheckMaster Privacy Policy</a>
+      for how data is collected and used.
+    </p>
+
+    <hr />
+    <p class="meta">CheckMaster · Account &amp; data deletion</p>
+  </main>
+</body>
+</html>
