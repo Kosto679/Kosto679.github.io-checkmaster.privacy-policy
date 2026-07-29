@@ -1,0 +1,9 @@
+# app-ads.txt — authorized digital sellers for CheckMaster
+#
+# Must be served at https://<domain>/app-ads.txt, where <domain> is the
+# developer website listed on the Play Store entry. AdMob crawls it to verify
+# that this app's inventory is sold by an authorized seller; until it resolves,
+# some demand sources will not bid.
+#
+# Publisher ID from AdMob → Settings → Account information.
+google.com, pub-6435478534546939, DIRECT, f08c47fec0942fa0
